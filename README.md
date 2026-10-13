@@ -1,36 +1,86 @@
-# Strand Config
+# Strand Config — badges para AIOStreams
 
-Configuração de badges do aplicativo **Strand** para os streams formatados pelo AIOStreams.
+Configuração de badges do **Strand** para streams exibidos pelo formatter personalizado do **AIOStreams / Tamtaro + Vidhin**.
 
-## Importação
+## Importar no Strand
 
-Cole no Strand a URL RAW:
+**URL RAW**:
 
 https://raw.githubusercontent.com/mvpinheiiro/strand-config/main/badge/badges.json
 
-## Regras
+O arquivo tem **54 badges, todos habilitados**, organizados em 7 grupos na seguinte ordem:
 
-- **54 badges em 7 grupos**: Destaques, Fonte e qualidade, Resolução, Vídeo, Áudio, Canais e Idiomas.
-- **Fonte e qualidade**: 20 badges originais de REMUX (T1–T3), BLU-RAY (T1–T8) e WEB (T1–T6), com os três `Unranked` desativados; as identificações agora dependem dos marcadores das *ranked stream expressions* (`stream.rseMatched`), não da interpretação dos nomes dos arquivos. Os tiers BD T1–T8 abrangem animes.
-- **Resolução**: 2160p (`#4K`), 1080p (`#FHD`), 720p (`#HD`), mostrando somente a maior delas.
-- **Vídeo**: somente a melhor faixa encontrada: `DV > HDR10+ > HDR10 > HDR`. `HDR10` é a hashtag complementar emitida pelo formatter; `SDR` não recebe badge. `IMAX Enhanced` ou `IMAX` pode aparecer como badge adicional, mas não simultaneamente.
-- **Áudio**: `DD+ ATMOS` e `TrueHD ATMOS` usam exclusivamente hashtags das RSEs. Ambas podem aparecer simultaneamente. Outros codecs são ocultados quando existe uma delas; caso contrário, só aparece o codec de maior prioridade.
-- **Canais e idiomas**: exibidos todos os valores distintos que chegarem como `#CH_*` e `#LANG_*`. Sem idioma latino.
-- **Apple TV Top**: precisa de `#DV` e `#DD+ ATMOS` simultaneamente; sem requisito de 4K. O marcador `DV (Disk)` não se confunde com `DV`.
-- **SeaDex Release**: `#SeaDex Best` ou `#SeaDex Alt`.
-- Não há detecção adicional de Atmos ou fallback para animes. Os badges dependem dos marcadores presentes no formatter.
+1. Destaques
+2. Fonte e qualidade
+3. Resolução
+4. Vídeo
+5. Áudio
+6. Canais
+7. Idiomas
 
-## Arquivos
+## Comportamento
 
-- `badge/badges.json`: configuração principal importada pelo Strand.
-- `badge/logo/`: imagens Dolby usadas por alguns badges.
+### Fonte e qualidade
 
-Os ícones já existentes foram preservados. Para `IMAX Enhanced`, a configuração utiliza um PNG público do repositório `leonevz/Elite-Badges`.
+- **REMUX**: T1–T3 e Unranked.
+- **Blu-ray**: T1–T8 e Unranked; T4–T8 existem para classificações adicionais de anime provenientes das expressões de Vidhin. Filmes e séries tradicionais normalmente usam apenas T1–T3.
+- **WEB**: T1–T6 e Unranked; T4–T6 são usados por classificações adicionais de anime.
+- Os níveis usam somente os marcadores das expressões ranqueadas presentes em `stream.rseMatched`, e não analisam grupos de release no nome do arquivo.
+- Os badges **Unranked** exigem, respectivamente, `#SRC_REMUX`, `#SRC_BLURAY` ou `#SRC_WEB`, **sem qualquer marcador reconhecido de nível T1–T8**. Por isso, a configuração **requer o complemento do formatter** indicado abaixo.
 
-## Atualização
+### Vídeo e resolução
 
-O endereço de importação é fixo, pois aponta para `main`. Se o Strand armazenar a configuração em cache, pode ser necessário atualizar/reimportar o JSON.
+- Resolução: somente uma dentre `#4K` / `#FHD` / `#HD`, com prioridade da maior.
+- Vídeo: somente a mais prioritária dentre `#DV`, `#HDR10+ Boost`, `#HDR10`, `#HDR`.
+- `#DV (Disk)` não equivale a `#DV`.
+- **IMAX Enhanced** e **IMAX**: logos pretos, apenas um deles visível se ambos forem sinalizados.
+- Não há badge para SDR.
 
-## Verificação
+### Áudio
 
-As regex passaram por 15 cenários simulados, incluindo DV + dois Atmos simultâneos, priorização HDR, codecs, IMAX, múltiplos canais e SeaDex. É recomendável validar a exibição dentro do Strand com streams reais.
+Exibição dos badges em ordem, agrupando **Dolby antes de DTS**:
+
+1. TrueHD Atmos
+2. DD+ Atmos
+3. TrueHD
+4. Dolby Digital+
+5. Dolby Digital
+6. DTS:X
+7. DTS-HD MA
+8. DTS-HD
+9. DTS
+
+Os badges Atmos dependem somente das expressões `#TrueHD ATMOS` e `#DD+ ATMOS`; ambos podem aparecer no mesmo stream. Os codecs comuns continuam com as regras de exclusividade preexistentes (somente o codec prioritário quando não há Atmos). A ordem visual Dolby/DTS **não altera a precedência técnica das regex dos codecs**.
+
+### Canais, idiomas e destaques
+
+- Canais: todos os canais sinalizados (`#CH_71`, `#CH_61`, `#CH_51`).
+- Idiomas: todos os disponíveis, nesta ordem: **PT, EN, ES**, DE, FR, HI, IT, JA, KO, RU, ZH.
+- Apple TV Top: `#DV` junto de `#DD+ ATMOS`, sem exigência de 4K.
+- SeaDex: `#SeaDex Best` ou `#SeaDex Alt`.
+
+## Complemento necessário no formatter do AIOStreams
+
+No fim do campo **Description** do formatter personalizado, acrescentar **exatamente**:
+
+```text
+{stream.quality::in('BluRay REMUX','DVD REMUX')[" #SRC_REMUX"||""]}{stream.quality::in('BluRay')[" #SRC_BLURAY"||""]}{stream.quality::in('WEB-DL','WEBRip')[" #SRC_WEB"||""]}
+```
+
+Isso acrescenta apenas hashtags de fonte à descrição, preservando o restante do formatter e **sem exibir o nome do arquivo**.
+
+**Atenção:** sem esse complemento, os novos badges Unranked estarão habilitados, mas **não aparecerão**, porque o JSON não reconstrói a fonte por conta própria. É necessário que `stream.quality` forneça uma qualidade compatível com esses valores; confirme no Preview do AIOStreams.
+
+As demais hashtags continuam vindo de `stream.rseMatched`, com os complementos `#HDR10`, `#LANG_*` e `#CH_*` já existentes no formatter personalizado.
+
+## Imagens IMAX
+
+As duas imagens pretas são arquivos públicos existentes no repositório [kingsizew/badges](https://github.com/kingsizew/badges), em `badge-images/imax/`. Outros ícones já existentes foram preservados.
+
+## Validação
+
+- 54 badges com `isEnabled: true`.
+- 25 testes de correspondência de regex aprovados, incluindo tiers, Unranked, IMAX, idiomas e coexistência dos dois Atmos.
+- A compatibilidade visual definitiva ainda precisa ser verificada dentro do Strand e a emissão de `#SRC_*` no Preview do AIOStreams.
+
+Se o Strand armazenar badges em cache, reimporte a URL RAW após a atualização.
