@@ -354,9 +354,9 @@
       "groupId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
       "id": "9d1f158a-bb45-5758-b8da-b45c2759f803",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/regex%20tags/sdr.png",
-      "isEnabled": false,
+      "isEnabled": true,
       "name": "SDR",
-      "pattern": "(?i)^(?=.*(?:\\.(?:mkv|mp4|avi|mov|m4v|ts)\\b|\\b(?:x264|x265|xvid|h[ ._-]?264|h[ ._-]?265|hevc|avc|web[-_. ]?dl|webrip|blu[-_. ]?ray|bd[-_. ]?remux|bdremux|remux|bdrip|bdmux|dvd|dvdrip|hdtv|uhd|4k)\\b))(?!.*(?:^|[^A-Za-z0-9])(?:dovi|dv|dolby[ ._-]?vision|hdr10(?:\\+|plus|p)?|hdr[ ._-]?10[ ._-]?(?:\\+|plus|p)?|hdr|hlg)(?=$|[^A-Za-z0-9])).*$",
+      "pattern": "(?i)^(?![\\s\\S]*(?:^|[^a-z0-9])(?:dv|dovi|dolby[ ._-]?vision|hdr(?:[ ._-]*10(?:[ ._-]*(?:\\+|plus|p))?)?)(?=$|[^a-z0-9]))[\\s\\S]*$",
       "tagColor": "#FFBE01",
       "tagStyle": "filled",
       "textColor": "#0e0e0e",
@@ -494,19 +494,6 @@
       "borderColor": "#FFFFFF"
     },
     {
-      "groupId": "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
-      "id": "1e376aee-96c7-53cb-87e6-ea82d34afca0",
-      "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/regex%20tags/Atmos.png",
-      "isEnabled": true,
-      "name": "ATMOS",
-      "pattern": "(?i)^(?=[\\s\\S]*(?:(?:^|[^a-z0-9])atmos(?=$|[^a-z0-9])))(?![\\s\\S]*(?:(?:#TrueHD[ \\t]+ATMOS(?=\\s|$)|(?:^|[^a-z0-9])true[ ._-]?hd[ ._+-]*(?:[57][ ._-]1[ ._+-]*)?atmos(?=$|[^a-z0-9]))))(?![\\s\\S]*(?:(?:^|[^a-z0-9])true[ ._-]?hd(?=$|[^a-z])))(?![\\s\\S]*(?:(?:#DD\\+[ \\t]+ATMOS(?=\\s|$)|(?:^|[^a-z0-9])(?:ddp(?:lus)?|dd\\+|e[ ._-]?ac[ ._-]?3|dolby[ ._-]?digital[ ._-]?(?:plus|\\+))[ ._+-]*(?:[57][ ._-]?1[ ._+-]*)?atmos(?=$|[^a-z0-9]))))(?![\\s\\S]*(?:(?:^|[^a-z0-9])(?:ddp(?:lus)?|dd\\+|e[ ._-]?ac[ ._-]?3|dolby[ ._-]?digital[ ._-]?(?:plus|\\+))(?=$|[^a-z]|[0-9])))(?![\\s\\S]*(?:(?:^|[^a-z0-9])(?:dd(?![a-z+]|\\+)|ac[ ._-]?3|dolby[ ._-]?digital(?![ ._-]?(?:plus|\\+)))(?=$|[^a-z]|[0-9])))(?![\\s\\S]*(?:(?:^|[^a-z0-9])dts[ ._:-]*x(?![ ._-]*26[456])(?=$|[^a-z0-9])))(?![\\s\\S]*(?:(?:^|[^a-z0-9])(?:dts[ ._-]*(?:hd[ ._-]*(?:ma|master[ ._-]*audio)|ma|xll))(?=$|[^a-z0-9])))(?![\\s\\S]*(?:(?:^|[^a-z0-9])dts[ ._-]*hd(?=$|[^a-z0-9])))(?![\\s\\S]*(?:(?:^|[^a-z0-9])dts(?=$|[^a-z0-9])))[\\s\\S]*$",
-      "tagColor": "#FFFFFF",
-      "tagStyle": "filled",
-      "textColor": "#0e0e0e",
-      "type": "filter",
-      "borderColor": "#FFFFFF"
-    },
-    {
       "groupId": "9f8e7d6c-3b2a-4f1e-9c8d-5a6b7e4f3d2c",
       "id": "343880da-882c-5dd8-8686-aee04111d735",
       "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/regex%20tags/71.png",
@@ -544,31 +531,6 @@
       "textColor": "#0e0e0e",
       "type": "filter",
       "borderColor": "#FFFFFF"
-    },
-    {
-      "borderColor": "#FFBE01",
-      "groupId": "3f2e1d0c-9b8a-4f7e-8d6c-5b4a39281716",
-      "id": "5f758265-9c4c-5aa5-bd5f-547553cd993d",
-      "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/regex%20tags/SEADEX.png",
-      "isEnabled": true,
-      "name": "SEADEX Release",
-      "pattern": "(?i)(?:#SeaDex(?:Best)?(?=\\s|$)|\\bseadex\\b|ᴀʟᴛ\\s+ʀᴇʟᴇᴀsᴇ|ʙᴇsᴛ\\s+ʀᴇʟᴇᴀsᴇ|alt\\s+release|best\\s+release)",
-      "tagColor": "#FFBE01",
-      "tagStyle": "filled",
-      "textColor": "#0e0e0e",
-      "type": "filter"
-    },
-    {
-      "id": "apple-tv-top",
-      "groupId": "3f2e1d0c-9b8a-4f7e-8d6c-5b4a39281716",
-      "name": "Apple TV Top",
-      "isEnabled": true,
-      "pattern": "(?i)#AppleTVTop(?=\\s|$)",
-      "tagColor": "#1B1B1D",
-      "borderColor": "#1B1B1D",
-      "tagStyle": "filled",
-      "textColor": "#FFFFFF",
-      "type": "filter"
     },
     {
       "borderColor": "#00000000",
@@ -712,6 +674,32 @@
       "tagStyle": "filled",
       "textColor": "#00000000",
       "type": "filter"
+    },
+    {
+      "borderColor": "#FFBE01",
+      "groupId": "3f2e1d0c-9b8a-4f7e-8d6c-5b4a39281716",
+      "id": "5f758265-9c4c-5aa5-bd5f-547553cd993d",
+      "imageURL": "https://raw.githubusercontent.com/nobnobz/Omni-Template-Bot-Bid-Raiser/main/Other/regex%20tags/SEADEX.png",
+      "isEnabled": true,
+      "name": "SEADEX Release",
+      "pattern": "(?i)(?:#SeaDex(?:Best)?(?=\\s|$)|\\bseadex\\b|ᴀʟᴛ\\s+ʀᴇʟᴇᴀsᴇ|ʙᴇsᴛ\\s+ʀᴇʟᴇᴀsᴇ|alt\\s+release|best\\s+release)",
+      "tagColor": "#FFBE01",
+      "tagStyle": "filled",
+      "textColor": "#0e0e0e",
+      "type": "filter"
+    },
+    {
+      "id": "apple-tv-top",
+      "groupId": "3f2e1d0c-9b8a-4f7e-8d6c-5b4a39281716",
+      "name": "Apple TV Top",
+      "isEnabled": true,
+      "pattern": "(?i)#AppleTVTop(?=\\s|$)",
+      "tagColor": "#30D158",
+      "borderColor": "#30D158",
+      "tagStyle": "filled",
+      "textColor": "#000000",
+      "type": "filter",
+      "imageURL": "https://raw.githubusercontent.com/mvpinheiiro/strand-config/main/badge/logo/apple-tv-top-green.png"
     }
   ],
   "groups": [
@@ -746,16 +734,16 @@
       "name": "Audio Channels"
     },
     {
-      "color": "#C792EA",
-      "id": "3f2e1d0c-9b8a-4f7e-8d6c-5b4a39281716",
-      "isExpanded": true,
-      "name": "Special Tags"
-    },
-    {
       "color": "#94A3B8",
       "id": "language",
       "isExpanded": true,
       "name": "Idiomas"
+    },
+    {
+      "color": "#C792EA",
+      "id": "3f2e1d0c-9b8a-4f7e-8d6c-5b4a39281716",
+      "isExpanded": true,
+      "name": "Special Tags"
     }
   ]
 }
