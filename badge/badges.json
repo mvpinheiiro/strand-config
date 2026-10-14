@@ -715,11 +715,24 @@
       "type": "filter"
     },
     {
-      "id": "silent-video-codec",
+      "id": "silent-hevc",
       "groupId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
-      "name": "Codec de vídeo",
+      "name": "HEVC",
       "isEnabled": true,
-      "pattern": "(?i)(?:^|[^A-Za-z0-9])(?:HEVC|H[ ._-]?265|X[ ._-]?265|HVC1|HEV1|AVC|AVC1|H[ ._-]?264|X[ ._-]?264|AV1|AV01|VP9|VP8|MPEG[ ._-]?2|MPEG[ ._-]?4|VC[ ._-]?1|XVID|DIVX)(?=$|[^A-Za-z0-9])",
+      "pattern": "(?i)(?:^|[^A-Za-z0-9])(?:HEVC|H[ ._-]?265|X[ ._-]?265|HVC1|HEV1)(?=$|[^A-Za-z0-9])",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "tagStyle": "filled",
+      "textColor": "#00000000",
+      "type": "filter",
+      "imageURL": "https://raw.githubusercontent.com/mvpinheiiro/strand-config/main/badge/logo/transparent.png"
+    },
+    {
+      "id": "silent-h264",
+      "groupId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+      "name": "H264",
+      "isEnabled": true,
+      "pattern": "(?i)(?:^|[^A-Za-z0-9])(?:AVC|AVC1|H[ ._-]?264|X[ ._-]?264)(?=$|[^A-Za-z0-9])",
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "tagStyle": "filled",
