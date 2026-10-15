@@ -270,7 +270,7 @@
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/4k.png",
       "isEnabled" : true,
       "name" : "2160p",
-      "pattern" : "(?i)^(?=[\\s\\S]*#4K(?=\\s|$)(?![ \\t]+Remaster\\b))[\\s\\S]*$",
+      "pattern" : "(?i)^(?=[\s\S]*#4K(?=\s|$)(?![ \t]+Remaster\b))(?=[\s\S]*(?:^|[^A-Za-z0-9])(?:AVC|AVC1|H[ ._-]?264|X[ ._-]?264|HEVC|H[ ._-]?265|X[ ._-]?265|HVC1|HEV1)(?=$|[^A-Za-z0-9]))[\s\S]*$",
       "tagColor" : "#FFBE01",
       "tagStyle" : "filled",
       "textColor" : "#0e0e0e",
@@ -526,30 +526,6 @@
       "tagColor" : "#D4D4D4",
       "tagStyle" : "filled",
       "textColor" : "#0e0e0e",
-      "type" : "filter"
-    },
-    {
-      "groupId" : "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
-      "id" : "silent-hevc",
-      "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/transparent.png",
-      "isEnabled" : true,
-      "name" : "HEVC",
-      "pattern" : "(?i)(?!)(?:^|[^A-Za-z0-9])(?:HEVC|H[ ._-]?265|X[ ._-]?265|HVC1|HEV1)(?=$|[^A-Za-z0-9])",
-      "tagColor" : "#00000000",
-      "tagStyle" : "filled",
-      "textColor" : "#00000000",
-      "type" : "filter"
-    },
-    {
-      "groupId" : "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
-      "id" : "silent-h264",
-      "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/transparent.png",
-      "isEnabled" : true,
-      "name" : "H264",
-      "pattern" : "(?i)(?!)(?:^|[^A-Za-z0-9])(?:AVC|AVC1|H[ ._-]?264|X[ ._-]?264)(?=$|[^A-Za-z0-9])",
-      "tagColor" : "#00000000",
-      "tagStyle" : "filled",
-      "textColor" : "#00000000",
       "type" : "filter"
     },
     {
