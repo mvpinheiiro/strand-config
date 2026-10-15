@@ -301,6 +301,30 @@
       "type" : "filter"
     },
     {
+      "groupId" : "550e8400-e29b-41d4-a716-446655440000",
+      "id" : "froststream-4k",
+      "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/4k.png",
+      "isEnabled" : true,
+      "name" : "FrostStream 4K",
+      "pattern" : "(?i)^(?=[\\s\\S]*(?<![A-Za-z0-9])FrostStream[ \\t]+4K(?![A-Za-z0-9]))(?![\\s\\S]*#4K(?=\\s|$)(?![ \\t]+Remaster\\b))(?![\\s\\S]*#FHD(?=\\s|$))(?![\\s\\S]*#HD(?=\\s|$)(?![ \\t]+Bluray\\b))[\\s\\S]*$",
+      "tagColor" : "#FFBE01",
+      "tagStyle" : "filled",
+      "textColor" : "#0e0e0e",
+      "type" : "filter"
+    },
+    {
+      "groupId" : "550e8400-e29b-41d4-a716-446655440000",
+      "id" : "froststream-1080p",
+      "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/1080p.png",
+      "isEnabled" : true,
+      "name" : "FrostStream 1080p",
+      "pattern" : "(?i)^(?=[\\s\\S]*(?<![A-Za-z0-9])FrostStream[ \\t]+1080p(?![A-Za-z0-9]))(?![\\s\\S]*#4K(?=\\s|$)(?![ \\t]+Remaster\\b))(?![\\s\\S]*#FHD(?=\\s|$))(?![\\s\\S]*#HD(?=\\s|$)(?![ \\t]+Bluray\\b))(?![\\s\\S]*(?<![A-Za-z0-9])FrostStream[ \\t]+4K(?![A-Za-z0-9]))[\\s\\S]*$",
+      "tagColor" : "#FF6904",
+      "tagStyle" : "filled",
+      "textColor" : "#FFFFFF",
+      "type" : "filter"
+    },
+    {
       "groupId" : "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
       "id" : "9be3e5a6-b81c-5659-b771-e2b111c2d496",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/DV.png",
@@ -350,11 +374,23 @@
     },
     {
       "groupId" : "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+      "id" : "froststream-hdr",
+      "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/HDR.png",
+      "isEnabled" : true,
+      "name" : "FrostStream HDR",
+      "pattern" : "(?i)^(?=[\\s\\S]*(?<![A-Za-z0-9])FrostStream(?![A-Za-z0-9]))(?=[\\s\\S]*(?<![A-Za-z0-9])HDR(?![A-Za-z0-9+]))(?![\\s\\S]*#DV(?=\\s|$)(?![ \\t]*\\(Disk\\)))(?![\\s\\S]*#HDR10\\+ Boost(?=\\s|$))(?![\\s\\S]*#HDR10(?=\\s|$))(?![\\s\\S]*#HDR(?=\\s|$))[\\s\\S]*$",
+      "tagColor" : "#FFBE01",
+      "tagStyle" : "filled",
+      "textColor" : "#0e0e0e",
+      "type" : "filter"
+    },
+    {
+      "groupId" : "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
       "id" : "video-sdr",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/sdr.png",
       "isEnabled" : true,
       "name" : "SDR",
-      "pattern" : "(?i)^(?![\\s\\S]*#DV(?=\\s|$)(?![ \\t]*\\(Disk\\)))(?![\\s\\S]*#HDR10\\+ Boost(?=\\s|$))(?![\\s\\S]*#HDR10(?=\\s|$))(?![\\s\\S]*#HDR(?=\\s|$))[\\s\\S]*$",
+      "pattern" : "(?i)^(?!(?=[\\s\\S]*(?<![A-Za-z0-9])FrostStream(?![A-Za-z0-9]))(?=[\\s\\S]*(?<![A-Za-z0-9])HDR(?![A-Za-z0-9+])))(?![\\s\\S]*#DV(?=\\s|$)(?![ \\t]*\\(Disk\\)))(?![\\s\\S]*#HDR10\\+ Boost(?=\\s|$))(?![\\s\\S]*#HDR10(?=\\s|$))(?![\\s\\S]*#HDR(?=\\s|$))[\\s\\S]*$",
       "tagColor" : "#FFBE01",
       "tagStyle" : "filled",
       "textColor" : "#0e0e0e",
