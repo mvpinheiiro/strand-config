@@ -270,7 +270,7 @@
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/4k.png",
       "isEnabled" : true,
       "name" : "2160p",
-      "pattern" : "(?i)^(?=[\s\S]*#4K(?=\s|$)(?![ \t]+Remaster\b))(?=[\s\S]*(?:^|[^A-Za-z0-9])(?:AVC|AVC1|H[ ._-]?264|X[ ._-]?264|HEVC|H[ ._-]?265|X[ ._-]?265|HVC1|HEV1)(?=$|[^A-Za-z0-9]))[\s\S]*$",
+      "pattern" : "(?i)^(?=[\\s\\S]*#4K(?=\\s|$)(?![ \\t]+Remaster\\b))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:AVC|AVC1|H[ ._-]?264|X[ ._-]?264|HEVC|H[ ._-]?265|X[ ._-]?265|HVC1|HEV1)(?=$|[^A-Za-z0-9]))[\\s\\S]*$",
       "tagColor" : "#FFBE01",
       "tagStyle" : "filled",
       "textColor" : "#0e0e0e",
