@@ -1,66 +1,61 @@
 {
   "filters" : [
     {
-      "borderColor" : "#FFFFFF",
       "groupId" : "3f2e1d0c-9b8a-4f7e-8d6c-5b4a39281716",
       "id" : "apple-tv",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/apple-tv.png",
       "isEnabled" : true,
       "name" : "Apple TV",
       "pattern" : "(?i)^(?=[\\s\\S]*#DV(?=\\s|$)(?![ \\t]*\\(Disk\\)))(?=[\\s\\S]*#DD\\+ ATMOS(?=\\s|$))[\\s\\S]*$",
-      "tagColor" : "#00000000",
+      "tagColor" : "#27C04F",
       "tagStyle" : "filled",
-      "textColor" : "#00000000",
+      "textColor" : "#FFFFFF",
       "type" : "filter"
     },
     {
-      "borderColor" : "#30D158",
       "groupId" : "3f2e1d0c-9b8a-4f7e-8d6c-5b4a39281716",
       "id" : "5f758265-9c4c-5aa5-bd5f-547553cd993d",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/SeaDex.png",
       "isEnabled" : true,
       "name" : "SeaDex",
       "pattern" : "(?i)^(?=[\\s\\S]*(?:#SeaDex Best(?=\\s|$)|#SeaDex Alt(?=\\s|$)))[\\s\\S]*$",
-      "tagColor" : "#30D158",
+      "tagColor" : "#27C04F",
       "tagStyle" : "filled",
-      "textColor" : "#000000",
+      "textColor" : "#FFFFFF",
       "type" : "filter"
     },
     {
-      "borderColor" : "#27C04F",
       "groupId" : "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id" : "21e14dc7-be82-5f92-9e34-a8d6566a6290",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/remux-t1.png",
       "isEnabled" : true,
       "name" : "REMUX 1",
       "pattern" : "(?i)^(?=[\\s\\S]*(?:#Remux T1(?=\\s|$)))[\\s\\S]*$",
-      "tagColor" : "#27C04F",
+      "tagColor" : "#AF52DE",
       "tagStyle" : "filled",
       "textColor" : "#FFFFFF",
       "type" : "filter"
     },
     {
-      "borderColor" : "#27C04F",
       "groupId" : "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id" : "90c53162-4c63-5741-95e0-ecd06fe31bf1",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/remux-t2.png",
       "isEnabled" : true,
       "name" : "REMUX 2",
       "pattern" : "(?i)^(?=[\\s\\S]*(?:#Remux T2(?=\\s|$)))[\\s\\S]*$",
-      "tagColor" : "#27C04F",
+      "tagColor" : "#AF52DE",
       "tagStyle" : "filled",
       "textColor" : "#FFFFFF",
       "type" : "filter"
     },
     {
-      "borderColor" : "#27C04F",
       "groupId" : "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id" : "25cec483-bbda-5ec3-b61f-64453dbf2e2e",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/remux-t3.png",
       "isEnabled" : true,
       "name" : "REMUX 3",
       "pattern" : "(?i)^(?=[\\s\\S]*(?:#Remux T3(?=\\s|$)))[\\s\\S]*$",
-      "tagColor" : "#27C04F",
+      "tagColor" : "#AF52DE",
       "tagStyle" : "filled",
       "textColor" : "#FFFFFF",
       "type" : "filter"
@@ -72,13 +67,12 @@
       "isEnabled" : true,
       "name" : "REMUX Unranked",
       "pattern" : "(?i)^(?=[\\s\\S]*#SRC_REMUX(?=\\s|$))(?![\\s\\S]*#(?:Remux T[1-9][0-9]*|BD T[1-9][0-9]*|(?:HD|UHD) Bluray T[1-9][0-9]*|Web T[1-9][0-9]*)(?=\\s|$))[\\s\\S]*$",
-      "tagColor" : "#27C04F",
+      "tagColor" : "#AF52DE",
       "tagStyle" : "filled",
       "textColor" : "#FFFFFF",
       "type" : "filter"
     },
     {
-      "borderColor" : "#0095D5",
       "groupId" : "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id" : "f16f72e3-1670-5fb3-b674-fabb033a9456",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/bluray-t1.png",
@@ -91,7 +85,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#0095D5",
       "groupId" : "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id" : "3eeef69f-13a1-5b04-8db5-564fc8e6ab28",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/bluray-t2.png",
@@ -104,7 +97,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#0095D5",
       "groupId" : "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id" : "c6c22559-0e46-50bd-a35a-ba9d280c7e2e",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/bluray-t3.png",
@@ -117,7 +109,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#0095D5",
       "groupId" : "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id" : "5f13c54e-c3c9-5465-8d40-20035cf92db4",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/bluray-t4.png",
@@ -130,7 +121,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#0095D5",
       "groupId" : "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id" : "79429d97-c84e-5b68-ba86-989c7b53c196",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/bluray-t5.png",
@@ -143,7 +133,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#0095D5",
       "groupId" : "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id" : "4e271fd9-bbe2-58fa-a198-a78e6c3c0351",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/bluray-t6.png",
@@ -156,7 +145,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#0095D5",
       "groupId" : "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id" : "f520f0ea-e9fb-5883-b912-9f5db4c2f04c",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/bluray-t7.png",
@@ -169,7 +157,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#0095D5",
       "groupId" : "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id" : "72458de0-9754-5fbb-b2d4-7e3d7689c5ad",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/bluray-t8.png",
@@ -182,7 +169,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#0095D5",
       "groupId" : "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id" : "acf8f544-3810-5b00-ac72-4835d3438e1a",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/bluray-unranked.png",
@@ -195,7 +181,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#FF6904",
       "groupId" : "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id" : "164db005-2bc2-590b-b7a0-3fb0e66bcde7",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/web-t1.png",
@@ -208,7 +193,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#FF6904",
       "groupId" : "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id" : "d0077e5d-d0d4-5367-8f9b-06f11938953e",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/web-t2.png",
@@ -221,7 +205,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#FF6904",
       "groupId" : "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id" : "ef2684f5-3bc9-5e62-bd0c-12707d3458f7",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/web-t3.png",
@@ -234,7 +217,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#FF6904",
       "groupId" : "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id" : "cbb353b1-8423-5df5-8a3a-daf305834c06",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/web-t4.png",
@@ -247,7 +229,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#FF6904",
       "groupId" : "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id" : "aa2d2b3d-6ae8-5da9-9dcf-504f70087508",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/web-t5.png",
@@ -260,7 +241,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#FF6904",
       "groupId" : "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id" : "9da62467-ed79-5b63-9061-4c00231dcb56",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/web-t6.png",
@@ -273,7 +253,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#FF6904",
       "groupId" : "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "id" : "4c04b5c6-2077-5c46-b7cd-6709391fcd37",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/web-unranked.png",
@@ -286,7 +265,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#FFBE01",
       "groupId" : "550e8400-e29b-41d4-a716-446655440000",
       "id" : "29075787-3ab6-539d-aee4-2245d93f115a",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/4k.png",
@@ -299,7 +277,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#FF6904",
       "groupId" : "550e8400-e29b-41d4-a716-446655440000",
       "id" : "0b6cb68b-9b86-5b7b-9d90-37222bde6d14",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/1080p.png",
@@ -312,7 +289,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#FB411C",
       "groupId" : "550e8400-e29b-41d4-a716-446655440000",
       "id" : "0d33e380-b632-566f-a57f-89ab9137313e",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/720p.png",
@@ -325,7 +301,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#FFBE01",
       "groupId" : "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
       "id" : "9be3e5a6-b81c-5659-b771-e2b111c2d496",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/DV.png",
@@ -338,7 +313,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#FFBE01",
       "groupId" : "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
       "id" : "f779c5b5-d414-5e94-9012-1636a724f9a9",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/HDR10Plus.png",
@@ -351,7 +325,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#FFBE01",
       "groupId" : "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
       "id" : "40c288b5-c99c-52fa-82a0-a17fa55f2f37",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/HDR10.png",
@@ -364,7 +337,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#FFBE01",
       "groupId" : "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
       "id" : "81fcb635-5677-5e0b-85c9-77fd994d0091",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/HDR.png",
@@ -377,7 +349,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#FFBE01",
       "groupId" : "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
       "id" : "video-sdr",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/sdr.png",
@@ -390,7 +361,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#FFBE01",
       "groupId" : "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
       "id" : "6c40f73a-bd58-4078-bbd3-4f86b10e3cf4",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/imax-Enhanced.png",
@@ -403,7 +373,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#FFBE01",
       "groupId" : "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
       "id" : "a542b0b8-8bec-567a-ac42-50e87ec3e11b",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/imax.png",
@@ -416,7 +385,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#FFFFFF",
       "groupId" : "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
       "id" : "a-atmos-truehd",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/dolby-atmos-truehd.png",
@@ -429,7 +397,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#FFFFFF",
       "groupId" : "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
       "id" : "065c7d3a-3b45-5ec0-ae22-57033e61557c",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/dolby-atmos-digital-plus.png",
@@ -442,7 +409,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#FFFFFF",
       "groupId" : "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
       "id" : "6f4637af-d45c-5ef9-9a35-7adc61ab5a0e",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/dolby-truehd.png",
@@ -455,7 +421,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#FFFFFF",
       "groupId" : "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
       "id" : "138d9480-c83e-5735-aa9b-a0190464fbd5",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/dolby-digital-plus.png",
@@ -468,7 +433,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#FFFFFF",
       "groupId" : "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
       "id" : "3476e4a0-0f7d-57f1-bd45-13bfa2db5e42",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/dolby-digital.png",
@@ -481,7 +445,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#FFFFFF",
       "groupId" : "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
       "id" : "4309bea6-d424-51f4-8099-0deabacfc306",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/dtsx.png",
@@ -494,7 +457,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#FFFFFF",
       "groupId" : "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
       "id" : "85d60c3f-6e5c-5e06-996f-8232bb686109",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/dtsHDMA.png",
@@ -507,7 +469,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#FFFFFF",
       "groupId" : "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
       "id" : "a47dc0b9-72ed-5bf9-bcba-5e92b602001c",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/dtsHD.png",
@@ -520,7 +481,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#FFFFFF",
       "groupId" : "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
       "id" : "da8db73e-5b47-560e-a543-abf02335db5c",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/dts.png",
@@ -533,46 +493,42 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#FFFFFF",
       "groupId" : "9f8e7d6c-3b2a-4f1e-9c8d-5a6b7e4f3d2c",
       "id" : "343880da-882c-5dd8-8686-aee04111d735",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/71.png",
       "isEnabled" : true,
       "name" : "7.1 CH",
       "pattern": "(?i)^(?=[\\s\\S]*#7\\.1(?=\\s|$))[\\s\\S]*$",
-      "tagColor" : "#FFFFFF",
+      "tagColor" : "#D4D4D4",
       "tagStyle" : "filled",
       "textColor" : "#0e0e0e",
       "type" : "filter"
     },
     {
-      "borderColor" : "#FFFFFF",
       "groupId" : "9f8e7d6c-3b2a-4f1e-9c8d-5a6b7e4f3d2c",
       "id" : "59853061-bc8f-5545-b392-644c22267ef8",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/61.png",
       "isEnabled" : true,
       "name" : "6.1 CH",
       "pattern": "(?i)^(?=[\\s\\S]*#6\\.1(?=\\s|$))[\\s\\S]*$",
-      "tagColor" : "#FFFFFF",
+      "tagColor" : "#D4D4D4",
       "tagStyle" : "filled",
       "textColor" : "#0e0e0e",
       "type" : "filter"
     },
     {
-      "borderColor" : "#FFFFFF",
       "groupId" : "9f8e7d6c-3b2a-4f1e-9c8d-5a6b7e4f3d2c",
       "id" : "e3ab9d1e-9064-53ca-b405-354e40f2455a",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/51.png",
       "isEnabled" : true,
       "name" : "5.1 CH",
       "pattern": "(?i)^(?=[\\s\\S]*#5\\.1(?=\\s|$))[\\s\\S]*$",
-      "tagColor" : "#FFFFFF",
+      "tagColor" : "#D4D4D4",
       "tagStyle" : "filled",
       "textColor" : "#0e0e0e",
       "type" : "filter"
     },
     {
-      "borderColor" : "#00000000",
       "groupId" : "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
       "id" : "silent-hevc",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/transparent.png",
@@ -585,7 +541,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#00000000",
       "groupId" : "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
       "id" : "silent-h264",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/transparent.png",
@@ -598,7 +553,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#00000000",
       "groupId" : "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
       "id" : "silent-extended",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/transparent.png",
@@ -611,7 +565,6 @@
       "type" : "filter"
     },
     {
-      "borderColor" : "#00000000",
       "groupId" : "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
       "id" : "silent-theatrical",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/transparent.png",
@@ -626,37 +579,31 @@
   ],
   "groups" : [
     {
-      "color" : "#C792EA",
       "id" : "3f2e1d0c-9b8a-4f7e-8d6c-5b4a39281716",
       "isExpanded" : true,
       "name" : "Destaques"
     },
     {
-      "color" : "#96CEB4",
       "id" : "7c211433-9f2b-4e2f-9b8c-2f9a8e8c8b1e",
       "isExpanded" : true,
       "name" : "Fonte e qualidade"
     },
     {
-      "color" : "#4ECDC4",
       "id" : "550e8400-e29b-41d4-a716-446655440000",
       "isExpanded" : true,
       "name" : "Resolução"
     },
     {
-      "color" : "#FF6B6B",
       "id" : "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
       "isExpanded" : true,
       "name" : "Vídeo"
     },
     {
-      "color" : "#45B7D1",
       "id" : "8e4b6f8e-2c1e-4f6b-9e8d-3f7a9d1c2e3f",
       "isExpanded" : true,
       "name" : "Áudio"
     },
     {
-      "color" : "#FFD700",
       "id" : "9f8e7d6c-3b2a-4f1e-9c8d-5a6b7e4f3d2c",
       "isExpanded" : true,
       "name" : "Canais"
