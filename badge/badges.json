@@ -534,7 +534,7 @@
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/transparent.png",
       "isEnabled" : true,
       "name" : "HEVC",
-      "pattern" : "(?i)(?!)(?:^|[^A-Za-z0-9])(?:HEVC|H[ ._-]?265|X[ ._-]?265|HVC1|HEV1)(?=$|[^A-Za-z0-9])",
+      "pattern" : "(?i)(?:^|[^A-Za-z0-9])(?:HEVC|H[ ._-]?265|X[ ._-]?265|HVC1|HEV1)(?=$|[^A-Za-z0-9])",
       "tagColor" : "#00000000",
       "tagStyle" : "filled",
       "textColor" : "#00000000",
