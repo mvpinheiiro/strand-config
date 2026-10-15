@@ -379,6 +379,19 @@
     {
       "borderColor" : "#FFBE01",
       "groupId" : "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+      "id" : "video-sdr",
+      "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/sdr.png",
+      "isEnabled" : true,
+      "name" : "SDR",
+      "pattern" : "(?i)^(?![\\s\\S]*#DV(?=\\s|$)(?![ \\t]*\\(Disk\\)))(?![\\s\\S]*#HDR10\\+ Boost(?=\\s|$))(?![\\s\\S]*#HDR10(?=\\s|$))(?![\\s\\S]*#HDR(?=\\s|$))[\\s\\S]*$",
+      "tagColor" : "#FFBE01",
+      "tagStyle" : "filled",
+      "textColor" : "#0e0e0e",
+      "type" : "filter"
+    },
+    {
+      "borderColor" : "#FFBE01",
+      "groupId" : "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
       "id" : "6c40f73a-bd58-4078-bbd3-4f86b10e3cf4",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/imax-Enhanced.png",
       "isEnabled" : true,
