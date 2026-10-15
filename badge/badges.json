@@ -3,12 +3,12 @@
     {
       "borderColor" : "#FFFFFF",
       "groupId" : "3f2e1d0c-9b8a-4f7e-8d6c-5b4a39281716",
-      "id" : "apple-tv-top",
+      "id" : "apple-tv",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/apple-tv.png",
       "isEnabled" : true,
       "name" : "Apple TV",
       "pattern" : "(?i)^(?=[\\s\\S]*#DV(?=\\s|$)(?![ \\t]*\\(Disk\\)))(?=[\\s\\S]*#DD\\+ ATMOS(?=\\s|$))[\\s\\S]*$",
-      "tagColor" : "#FFFFFF",
+      "tagColor" : "#000000",
       "tagStyle" : "filled",
       "textColor" : "#000000",
       "type" : "filter"
