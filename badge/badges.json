@@ -1,7 +1,7 @@
 {
   "filters" : [
     {
-      "borderColor" : "#00000000",
+      "borderColor" : "#FFFFFF",
       "groupId" : "3f2e1d0c-9b8a-4f7e-8d6c-5b4a39281716",
       "id" : "apple-tv",
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/apple-tv.png",
