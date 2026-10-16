@@ -330,7 +330,7 @@
       "imageURL" : "https:\/\/raw.githubusercontent.com\/mvpinheiiro\/strand-config\/main\/badge\/720p.png",
       "isEnabled" : true,
       "name" : "FrostStream HD",
-      "pattern" : "(?i)^(?=[\\s\\S]*(?<![A-Za-z0-9])FrostStream(?![A-Za-z0-9]))(?![\\s\\S]*(?<![A-Za-z0-9])FrostStream[ \\t]+(?:4K|1080p)(?![A-Za-z0-9]))(?![\\s\\S]*#4K(?=\\s|$)(?![ \\t]+Remaster\\b))(?![\\s\\S]*#FHD(?=\\s|$))(?![\\s\\S]*#HD(?=\\s|$)(?![ \\t]+Bluray\\b))[\\s\\S]*$",
+      "pattern" : "(?i)^(?=[\\s\\S]*(?<![A-Za-z0-9])(?:FrostStream[ \\t]+720p(?![A-Za-z0-9])|FrostStream(?![A-Za-z0-9])))(?![\\s\\S]*(?<![A-Za-z0-9])FrostStream[ \\t]+(?:4K|1080p)(?![A-Za-z0-9]))(?![\\s\\S]*#4K(?=\\s|$)(?![ \\t]+Remaster\\b))(?![\\s\\S]*#FHD(?=\\s|$))(?![\\s\\S]*#HD(?=\\s|$)(?![ \\t]+Bluray\\b))[\\s\\S]*$",
       "tagColor" : "#FB411C",
       "tagStyle" : "filled",
       "textColor" : "#FFFFFF",
